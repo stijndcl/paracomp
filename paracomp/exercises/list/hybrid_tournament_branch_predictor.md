@@ -21,9 +21,9 @@ used for indexing the predictor.
 | branch address  | branch direction  | bimodal | gshare  | hybrid  | PHT0  | PHT1  | PHT0  | PHT1  | BHR | PHT0  | PHT1  |
 | ---             | ---               | ---     | ---     | ---     | ---   | ---   | ---   | ---   | --- | ---   | ---   |
 |                 |                   |         |         |         | 2     | 0     | 0     | 2     | 0   | 2     | 1     |
-| 0x654           | N                 |
-| 0x780           | T                 |
-| 0x654           | T                 |
-| 0x780           | T                 |
-| 0x654           | T                 |
-| 0x780           | N                 |
+| 0x654           | N                 | T | N | 2 | 1 | 0 | 0 | 0 | 2 | 0 |
+| 0x780           | T                 | N | T | 3 | 1 | 1 | 1 | 1 | 3 | 0 |
+| 0x654           | T                 | N | T | 3 | 2 | 1 | 1 | 1 | 3 | 0 |
+| 0x780           | T                 | N | N | 3 | 2 | 2 | 2 | 1 | 3 | 1 |
+| 0x654           | T                 | T | T | 3 | 2 | 2 | 2 | 1 | 3 | 1 |
+| 0x780           | N                 | T | N | 3 | 2 | 1 | 1 | 0 | 3 | 0 |
