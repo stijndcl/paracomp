@@ -13,7 +13,7 @@ Complete the following table. Note that all instructions have a size of 4 bytes 
 other words, the last two bits of the instruction address are always zero, and are therefore >
 used for indexing the predictor.
 
-| _________________________________________________________ | _______ state predictor AFTER executing the branch _______ |
+| _________________________________________________________ | _______ state predictor AFTER executing the branch ______ |
 | --- | --- |
 
 | _________________________ | ________ prediction _______  | metapredictor | __ bimodal __ | ______ gshare ______ |
