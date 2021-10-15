@@ -16,7 +16,7 @@ used for indexing the predictor.
 | _________________________________________________________ | ______ state predictor AFTER executing the branch ______ |
 | --- | --- |
 
-| _____________________________ | _________ prediction ________  | metapredictor | __ bimodal __ | ______ gshare ______ |
+| _______________________________ | ________ prediction _______  | metapredictor | __ bimodal __ | ______ gshare ______ |
 | ---                       | ---                           | ---           | ---     |---      |
 
 | branch address  | branch direction  | bimodal | gshare  | hybrid  | PHT0  | PHT1  | PHT0  | PHT1  | BHR | PHT0  | PHT1  |
