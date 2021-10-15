@@ -1,8 +1,11 @@
 # Exercises Parallel Computer Systems
 ## Table of contents
-- page 2 [Hybrid tournament branch predictor](./list/hybrid_tournament_branch_predictor.md)
-- page 3 [Gshare versus hybrid predictor](./list/gshare_versus_hybrid_predictor.md)
+### Completed
+### To solve
+- todo page 2 [Hybrid tournament branch predictor](./list/hybrid_tournament_branch_predictor.md)
+- todo page 3 [Gshare versus hybrid predictor](./list/gshare_versus_hybrid_predictor.md)
 - todo page 4 [GAg branch predictor](./list/gag_branch_predictor.md)
+### To do
 - todo page 6 [GAg branch predictor](./list/gag_branch_predictor2.md)
 - todo page 7 [Branch Prediction and In-Order Pipeline](./list/branch_prediction_and_in-order_pipeline.md)
 - todo page 9 [PAg and GAg Branch Prediction](./list/pag_and_gag_branch_prediction.md)
