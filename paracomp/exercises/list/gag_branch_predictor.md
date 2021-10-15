@@ -11,9 +11,12 @@ value of 1?
 
 (c) Consider the following control flow graph:
 
+![control flow graph](gag_branch_predictor_img1.png) 
+
 The fat curve indicates how this control flow graph is traversed during the execution of the
 program. Write down the branch behavior of the four conditional branches (denoted in gray in
-the figure): use T for taken and N for not-taken.\
+the figure): use T for taken and N for not-taken.
+
 Branch behavior for branch (a): \
 Branch behavior for branch (b): \
 Branch behavior for branch (c): \
