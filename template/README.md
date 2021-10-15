@@ -1,3 +1,3 @@
-# Artificial Intelligence
+# Template
 ## [Theory](./theory)
 ## [Exercises](./exercises)
