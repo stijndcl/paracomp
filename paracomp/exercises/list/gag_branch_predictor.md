@@ -46,11 +46,18 @@ The fat curve indicates how this control flow graph is traversed during the exec
 program. Write down the branch behavior of the four conditional branches (denoted in gray in
 the figure): use T for taken and N for not-taken.
 
-Branch behavior for branch (a): \
-Branch behavior for branch (b): \
-Branch behavior for branch (c): \
-Branch behavior for branch (d): 
+Branch behavior for branch (a): TNNTNN... \
+Branch behavior for branch (b): TNTNTN... \
+Branch behavior for branch (c): TTT... \
+Branch behavior for branch (d): NNN...
 
-How many history bits does a PAg predictor need to perfectly predict the behavior of these four
-branches (after initialization)? (Assume there is no aliasing in the first level of the PAg branch
-predictor.)
+How many history bits does a PAg predictor need to perfectly predict the behavior of these four branches (after initialization)? (Assume there is no aliasing in the first level of the PAg branch predictor.)
+
+| number of bits | branching |
+| --- | --- |
+| 1 | X |
+| 2 | TN -> N |
+|   | TN -> N |
+| 3 | NTN -> N |
+|   | NTN -> T |
+| 4 | OK |
