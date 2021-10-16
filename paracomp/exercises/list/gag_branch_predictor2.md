@@ -16,4 +16,9 @@ L2: ...
 (apart from start-up and end-of-loop effects) 
 for the inner-loop branch with the asterisk (*)?
 
+![gag_branch_predictor_img1.png](gag_branch_predictor_img1.png)
+> So 2^20 bits
+
 (b) What fraction of the PHT is accessed while executing the above loop?
+
+You only use 21 of the 2^20 bits.
