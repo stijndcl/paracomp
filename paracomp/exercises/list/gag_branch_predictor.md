@@ -4,10 +4,39 @@ branch predictor table after a (sufficiently long) execution of the following se
 outcomes: TTTNNTTTNNTTTNN... where T stands for taken and N stands for not taken.
 Assume 2-bit saturating counters in the PHT.
 
+TTTNNTTTNNTTTNN...
+
+|PHT  |binary |calculations |notes  |
+|---  |---    |---          |---    |
+|-    |000    |-            | |
+|3    |001    |+1 +2 -> 3   | |
+|-    |010    |-            | |
+|3    |011    |+1 +1 -> 3   | |
+|3    |100    |+1 +1 -> 3   | |
+|-    |101    |-            | |
+|0    |110    |-1 -1 -> 0   | TTN -> 110 -> next: N -> -1 |
+|0    |111    |-1 -1 -> 0   | TTT is 111, since the next value is N -> -1 |
+
+
 (b) Now consider a GAg branch predictor with two history bits, and the same branch outcome
 sequence: TTTNNTTTNNTTTNN... What is the accuracy of this branch predictor during
 steady-state (i.e., after the initialization phase) assuming all 2-bit saturating counters have an initial
 value of 1?
+
+TTTNNTTTNNTTTNN...
+
+|PHT  |binary |calculations |notes  |
+|---  |---    |---          |---    |
+|1    |00     |-> 2         | |
+|1    |01     |-> 2         | |
+|1    |10     |-> 0         | |
+|1    |11     |-> 2 -> 1 -> 2 -> 1 -> ... |repeats |
+
+TT X\
+TT X\
+TN V\
+NN V\
+NT V
 
 (c) Consider the following control flow graph:
 
