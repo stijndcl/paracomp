@@ -13,8 +13,12 @@ You can assume that the branch predictor is targeted at a RISC ISA with 4-byte i
 
 Draw a scheme for predictor A: 
 
+![gshare_versus_hybrid_predictor_img1.png](gshare_versus_hybrid_predictor_img1.png)
+
 Draw a scheme for predictor B: 
 
-Hardware cost (in number of bits) for predictor A:  
+![gshare_versus_hybrid_predictor_img2.png](gshare_versus_hybrid_predictor_img2.png)
 
-Hardware cost (in number of bits) for predictor B: 
+Hardware cost (in number of bits) for predictor A: **1031**
+
+Hardware cost (in number of bits) for predictor B: **1478**
