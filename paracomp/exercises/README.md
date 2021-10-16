@@ -4,7 +4,7 @@
 - page 2 [Hybrid tournament branch predictor](./list/hybrid_tournament_branch_predictor.md)
 - page 3 [Gshare versus hybrid predictor](./list/gshare_versus_hybrid_predictor.md)
 ### To solve
-- page 4 [GAg branch predictor](./list/gag_branch_predictor.md)
+- (c&d nog) page 4 [GAg branch predictor](./list/gag_branch_predictor.md)
 - page 6 [GAg branch predictor](./list/gag_branch_predictor2.md)
 ### To do
 - page 7 [Branch Prediction and In-Order Pipeline](./list/branch_prediction_and_in-order_pipeline.md)
