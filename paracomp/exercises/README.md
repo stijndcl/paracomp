@@ -6,10 +6,10 @@
 - page 4 [GAg branch predictor](./list/gag_branch_predictor.md)
 - page 6 [GAg branch predictor](./list/gag_branch_predictor2.md)
 ### To solve
+- page 11 [PAg versus GAg Branch Prediction](./list/pag_versus_gag_branch_prediction.md)
 ### To do
 - page 7 [Branch Prediction and In-Order Pipeline](./list/branch_prediction_and_in-order_pipeline.md)
 - page 9 [PAg and GAg Branch Prediction](./list/pag_and_gag_branch_prediction.md)
-- page 11 [PAg versus GAg Branch Prediction](./list/pag_versus_gag_branch_prediction.md)
 - page 12 [In-order superscalar micro-architecture](./list/in-order_superscalar_micro-architecture.md)
 - page 14 [Data dependences](./list/data_dependences.md)
 - page 18 [CISC code excerpt on in-order and out-of-order cores](cisc_code_excerpt_on_in-order_and_out-of-order_cores.md)
