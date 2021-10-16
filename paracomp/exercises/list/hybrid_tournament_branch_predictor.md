@@ -27,3 +27,26 @@ used for indexing the predictor.
 | 0x780           | T                 | N       | N       | N       | 3     | 2     | 2     | 2     | 1   | 3     | 1     |
 | 0x654           | T                 | T       | T       | T       | 3     | 2     | 2     | 3     | 1   | 3     | 1     |
 | 0x780           | N                 | T       | N       | N       | 3     | 2     | 1     | 3     | 0   | 3     | 0     |
+
+### Notes
+
+**Branch direction** \
+The direction the branch went in in reality.
+
+**PHT0 or PHT1** \
+0x654 -> to binairy -> ...0100 -> PHT1 \
+0x780 -> to binairy -> ...0000 -> PHT0 \
+So for address 0x654 we only look at PHT1 (and possibly BHR) \
+and for address 0x780 we only look at PHT0 (and possibly BHR)
+
+**Bimodal predictor** \
+Predicting: Taken if >= 2 | Not Taken if < 2 \
+Updating: + 1 if Taken | - 1 if Not Taken
+
+**Gshare predictor** \
+For the BHR:\
+First you do BHR XOR addr and then you pick PHT0 or PHT1 \
+Updating: 0 if previous branching was Not Taken | 1 if previous branching was Taken \
+Then for the PHT's: \
+Predicting: Taken if >= 2 | Not Taken if < 2 \
+Updating: + 1 if Taken | - 1 if Not Taken
