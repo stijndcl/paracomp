@@ -24,5 +24,9 @@ Pattern History Tables for both the PAg and GAg predictors.
 (a) What is the minimum size (in bits) for the PAg branch predictor to achieve perfect
 accuracy (no mispredictions) during steady-state?
 
+![pag_versus_gag_branch_prediction_img1](pag_versus_gag_branch_prediction_img1.png)
+
 (b) What is the minimum size (in bits) for the GAg branch predictor to achieve perfect
 accuracy (no mispredictions) during steady-state?
+
+![pag_versus_gag_branch_prediction_img2](pag_versus_gag_branch_prediction_img2.png)
