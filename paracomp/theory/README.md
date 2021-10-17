@@ -1,2 +1,2 @@
 # Theory
-![L1 SUperscalar Execution](l1.md)
+[L1 SUperscalar Execution](l1.md)
