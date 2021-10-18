@@ -1,3 +1,3 @@
-# edu_notes
-## [Parallel Computer Systems](./paracomp)
-## [Artificial Intelligence](ai)
+# Parallel Computer Systems
+## [Theory](./theory)
+## [Exercises](./exercises)
