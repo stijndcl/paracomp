@@ -1,3 +1,0 @@
-# Artificial Intelligence
-## [Theory](./theory)
-## [Exercises](./exercises)
