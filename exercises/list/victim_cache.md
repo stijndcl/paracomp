@@ -18,8 +18,8 @@ columns represent address tags. In the victim cache, the least recently used blo
 | 0A0     | miss    |       |       | 0A0   |       |         |           |
 | 200     | miss    | 200   |       |       |       | IFO/LRU | 080       |
 | 080     | hit     | 080   |       |       |       | IFO/LRU | 200       |
-| 0B0     | miss    |       |       |       | 0B0   | FFO/LRU | 200       |
-| 0E0     | miss    |       |       | 0E0   |       | 0A0/LRU | 200       |
-| 200     | hit     | 200   |       |       |       | 0A0/LRU | 080       |
-| 080     | hit     | 080   |       |       |       | 0A0/LRU | 200       |
-| 200     | hit     | 200   |       |       |       | 0A0/LRU | 080       |
+| 0B0     | miss    |       |       |       | 0B0   | FFO     | 200/LRU   |
+| 0E0     | miss    |       |       | 0E0   |       | FFO/LRU | 0A0       |
+| 200     | miss    | 200   |       |       |       | 080     | 0A0/LRU   |
+| 080     | hit     | 080   |       |       |       | 0200    | 0A0/LRU   |
+| 200     | hit     | 200   |       |       |       | 080     | 0A0/LRU   |
