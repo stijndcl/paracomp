@@ -31,14 +31,14 @@ structural hazards, etc., block in the ID stage.
 Also mark when forwarding is used—you can do this by drawing an arrow between the producer
 and the consumer of a register value.
 
-|              | 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|
-|--------------|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
-|add  r1,r2,r3 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-|ld   $4(A),r4 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-|mul  r3,r4,r2 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-|add  1,r4,r2  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-|sub  r2,r1,r5 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-|ld   $8(A),r4 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-|add  r1,r4,r3 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-|add  r2,r4,r5 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-|add  r3,r2,r5 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|              | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |10 |11 |12 |13 |14 |15 |16 |17 |18 |19 |20 |
+|--------------|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|add  r1,r2,r3 |IF |ID |OF |EX |WB |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|ld   $4(A),r4 |IF |ID |OF |M1 |M1 |M3 |WB |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|mul  r3,r4,r2 |   |IF |ID |ID |ID |OF |EX1|EX2|EX3|EX4|WB |   |   |   |   |   |   |   |   |   |
+|add  1,r4,r2  |   |IF |ID |ID |ID |ID |ID |ID |ID |OF |EX |WB |   |   |   |   |   |   |   |   |
+|sub  r2,r1,r5 |   |   |IF |IF |IF |ID |ID |ID |ID |OF |M1 |M2 |M3 |WB |   |   |   |   |   |   |
+|ld   $8(A),r4 |   |   |IF |IF |IF |IF |IF |IF |IF |ID |ID |ID |OF |EX |WB |   |   |   |   |   |
+|add  r1,r4,r3 |   |   |   |   |   |IF |IF |IF |IF |IF |ID |ID |ID |OF |EX |WB |   |   |   |   |
+|add  r2,r4,r5 |   |   |   |   |   |   |   |   |   |IF |ID |ID |ID |ID |OF |EX |WB |   |   |   |
+|add  r3,r2,r5 |   |   |   |   |   |   |   |   |   |   |IF |ID |ID |ID |OF |EX |WB |  |  |  |
