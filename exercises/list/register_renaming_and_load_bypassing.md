@@ -33,6 +33,17 @@ copies (moves) the content of register eax to register edx if the comparison is 
 |9 |cmovl edx, eax                      |cmovl **F11**, **F15**                                   |
 |10|mov dword ptr [rsi+rcx*1+0x4], edx  |mov **F15** -> dword ptr \[**F5**+**F3**\*1+0x4] ST      |
 
+Rename Map Table
+|Arch. Reg. |Physical Register(s)  |
+|rsp        |F1                    |
+|rdx        |F2, F9, F13, F14, F15 |
+|rcx        |F3                    |
+|rbp        |F4                    |
+|rsl        |F5                    |
+|eax        |F6, F11               |
+|r9         |F7, F12               |
+|rbx        |F8                    |
+
 (b) Consider an out-of-order processor with dynamic memory disambiguation. Does load
 bypassing improve performance for the above code? If so, under which specific conditions?
 Be precise.
