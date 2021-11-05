@@ -10,7 +10,7 @@ memory in the same cycle, the load has priority over the store.
 
 The architecture is as follows:
 
-![load_forwarding_and_bypassing_architecture.png](load_forwarding_and_bypassing_architecture.png]
+![load_forwarding_and_bypassing_architecture.png](load_forwarding_and_bypassing_architecture.png)
 
 Consider the following sequence of instructions:
 
