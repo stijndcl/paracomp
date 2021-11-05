@@ -1,3 +1,5 @@
+# Load forwarding and bypassing
+
 Consider an out-of-order architecture that implements load forwarding and load bypassing. A
 sequence of instructions is given, together with the time when the instruction enters the
 reservation station (dispatch). Assume that an instruction that enters the reservation station can be
@@ -29,3 +31,29 @@ Complete the following table:
 |4    |       |        |       |        |C          |B           |
 |5    |       |        |       |        |C          |            |
 |6    |       |        |       |        |           |C           |
+
+Now consider the following sequence:
+|dispatch|isntruction|completion|
+|-|-|-|
+|1|Store A|6|
+|2|Load B| |
+|3|Load A| |
+|4|Store D|10|
+|4|Load E| |
+|4|Load A| |
+|5|Load D| |
+
+Complete the following table:
+|Cycle|Load RS|Store RS|Load EA|Store EA|Store queue|Cache access|
+|-----|-------|--------|-------|--------|-----------|------------|
+|1    |       |st A    |       |        |           |            |
+|2    |ld B   |        |       |st A    |           |            |
+|3    |ld A   |        |       |        |st A       |            |
+|4    |ld E, ld A |st D|ld A   |        |st A       |ld B        |
+|5    |       |        |       |        |           |            |
+|6    |       |        |       |        |           |            |
+|7    |       |        |       |        |           |            |
+|8    |       |        |       |        |           |            |
+|9    |       |        |       |        |           |            |
+|10   |       |        |       |        |           |            |
+|11   |       |        |       |        |           |            |
