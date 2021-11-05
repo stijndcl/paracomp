@@ -20,3 +20,11 @@
 - page 20 [Data flow graph](data_flow_graph.md)
 - page 21 [Register renaming](register_renaming.md)
 - page 24 [Out-of-order scheduling](out-of-order_scheduling.md)
+
+
+# Load forwarding/bypassing versus out-of-order execution
+(a)
+
+(b)
+
+(c)
