@@ -44,16 +44,16 @@ Now consider the following sequence:
 |5|Load D| |
 
 Complete the following table:
-|Cycle|Load RS|Store RS|Load EA|Store EA|Store queue|Cache access|
-|-----|-------|--------|-------|--------|-----------|------------|
-|1    |       |st A    |       |        |           |            |
-|2    |ld B   |        |       |st A    |           |            |
-|3    |ld A   |        |       |        |st A       |            |
-|4    |ld E, ld A |st D|ld A   |        |st A       |ld B        |
-|5    |       |        |       |        |           |            |
-|6    |       |        |       |        |           |            |
-|7    |       |        |       |        |           |            |
-|8    |       |        |       |        |           |            |
-|9    |       |        |       |        |           |            |
-|10   |       |        |       |        |           |            |
-|11   |       |        |       |        |           |            |
+|Cycle|Load RS   |Store RS|Load EA|Store EA|Store queue|Cache access|
+|-----|----------|--------|-------|--------|-----------|------------|
+|1    |          |st A    |       |        |           |            |
+|2    |ld B      |        |       |st A    |           |            |
+|3    |ld A      |        |       |        |st A       |            |
+|4    |ld E, ld A|st D    |ld A \*|        |st A       |ld B        |
+|5    |ld D, ld 1|        |ld E   |st D    |st A       |            |
+|6    |ld D      |        |ld A   |        |st D, st a |ld E        |
+|7    |          |        |ld D % |        |st D %     |st A        |
+|8    |          |        |       |        |st D       |            |
+|9    |          |        |       |        |st D       |            |
+|10   |          |        |       |        |$          |st D        |
+|11   |          |        |       |        |           |            |
