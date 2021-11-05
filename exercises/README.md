@@ -9,6 +9,7 @@
 ### To solve
 - page 12 [In-order superscalar micro-architecture](./list/in-order_superscalar_micro-architecture.md)
 - page 14 [Data dependences](./list/data_dependences.md)
+- page 41 [Prefetching](./list/prefetching.md)
 ### To do
 - page 7 [Branch Prediction and In-Order Pipeline](./list/branch_prediction_and_in-order_pipeline.md)
 - page 9 [PAg and GAg Branch Prediction](./list/pag_and_gag_branch_prediction.md)
