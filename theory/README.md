@@ -1,5 +1,5 @@
 # Theory
 
-### [L1: Superscalar Execution](l1.md)
-### [L2: Branch Prediction](l2.md)
-### [L4: Memory Hierarchy](l4.md)
+### [L1: Superscalar Execution](list/l1.md)
+### [L2: Branch Prediction](list/l2.md)
+### [L4: Memory Hierarchy](list/l4.md)
