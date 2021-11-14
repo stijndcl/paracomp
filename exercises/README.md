@@ -11,3 +11,9 @@
 - page 41 [Prefetching](./list/prefetching.md)
 - page 43 [Victim cache](./list/victim_cache.md)
 - page 45 [Load forwarding and bypassing](./list/load_forwarding_and_bypassing.md)
+
+- page 47 [Cache misses](./list/cache_misses.md)
+- page 48 [Interval Analysis](./list/interval_analyses.md)
+- page 50 [Iron Law of Performance](./list/iron_law_of_performance.md)
+- page 51 [Performance](./list/performance.md)
+- page 53 [Memory-Level Parallellism](./list/memory_level_parallellism.md)
