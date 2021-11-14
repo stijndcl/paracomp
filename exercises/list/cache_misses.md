@@ -42,4 +42,3 @@ microprocessor with non-blocking caches? Explain why (not).
 Yes, the second one will be faster:
 - The first implementation will load a cache block, but all elements are in the same cache line so the next cache block isn't loaded as it isn't needed yet
 - The second will load all 4 cache blocks after each other because all of them are required from the start
-- 
